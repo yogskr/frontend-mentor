@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --work-sans: 'Work sans', sans-serif;
+  --primary-text-color: hsl(292, 42%, 14%);
+  --secondary-text-color: hsl(292, 16%, 49%);
+  --hover-link: hsl(294, 77%, 47%);
+}
+
+/* ========== General Style ========== */
+p {
+  font-size: 16px;
+}
+
+html {
+  background: url(../images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  top: 205px;
+  background-color: hsl(0, 0%, 100%);
+  width: 375px;
+  border-radius: 15px;
+  padding: 30px;
+  scale: 0.9;
+  box-shadow: 0px 30px 40px -5px hsla(296, 18%, 83%, 0.3);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+header h1,
+.question h2,
+.answer p {
+  font-family: var(--work-sans);
+}
+
+/* ========== Header Style ========== */
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-text-color);
+  font-weight: 700;
+}
+
+.star-icon {
+  width: 30px;
+}
+
+/* ========== Subheading Style ========== */
+.question {
+  cursor: pointer;
+  margin: 25px 0;
+}
+
+.question h2 {
+  width: 90%;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  transition: color 150ms ease-in 50ms;
+}
+
+.question h2:hover {
+  color: var(--hover-link);
+}
+
+.answer {
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+}
+
+.answer p {
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
+
+.line-break {
+  border: none;
+  background-color: hsl(293, 18%, 90%);
+  height: 1px;
+}
+
+/* ========== Plus and Minus Icons Style ========== */
+.plus-icon {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ========== Footer Style ========== */
+.attribution {
+  position: relative;
+  top: 200px;
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: #1d4ed8;
+}
+
+/* ========== Responsive Style ========== */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+    padding: 40px 60px;
+    top: 160px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .star-icon {
+    width: initial;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
