@@ -20,13 +20,11 @@ p {
 }
 
 html {
-  background: url(../images/background-pattern-desktop.svg);
+  background: url(../images/background-pattern-mobile.svg);
   background-repeat: no-repeat;
-  background-color: hsl(275, 100%, 97%);
   background-position: top;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: hsl(275, 100%, 97%);
+  background-size: contain;
 }
 
 body {
@@ -37,7 +35,7 @@ body {
 
 .container {
   position: relative;
-  top: 205px;
+  top: 125px;
   background-color: hsl(0, 0%, 100%);
   width: 375px;
   border-radius: 15px;
@@ -149,10 +147,14 @@ figure {
 
 /* ========== Responsive Style ========== */
 @media screen and (min-width: 768px) {
+  html {
+    background-image: url(../images/background-pattern-desktop.svg);
+  }
+
   .container {
     width: 700px;
     padding: 40px 60px;
-    top: 160px;
+    top: 270px;
   }
 
   h1 {
@@ -165,5 +167,9 @@ figure {
 
   p {
     font-size: 17px;
+  }
+
+  .attribution {
+    top: 300px;
   }
 }
