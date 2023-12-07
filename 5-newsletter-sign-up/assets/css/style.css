@@ -230,7 +230,7 @@ aside img {
     background-color: var(--white);
     flex-direction: row-reverse;
     gap: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
     height: min-content;
   }
 
@@ -265,12 +265,13 @@ aside img {
   }
 
   aside {
-    padding: 50px;
+    padding: 60px 50px;
     width: 500px;
     gap: 40px;
   }
 
   .success-message h2 {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
+    letter-spacing: 1px;
   }
 }

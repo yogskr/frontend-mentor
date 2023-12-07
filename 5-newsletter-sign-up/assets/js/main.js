@@ -37,6 +37,8 @@ const validateEmail = () => {
   }
 };
 
+const displayErrorMsg = () => {};
+
 submitBtn.addEventListener('click', validateEmail);
 emailInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
