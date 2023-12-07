@@ -41,7 +41,7 @@
 h1,
 h2,
 label,
-button {
+.button {
   font-family: var(--font-roboto-bold);
   color: var(--dark-slate-grey);
 }
@@ -109,7 +109,7 @@ li {
   gap: 15px;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,16 +149,17 @@ input {
   outline: 0;
 }
 
-button {
+.button {
   font-size: 1rem;
   color: var(--white);
   background: var(--dark-slate-grey);
   padding: 18px;
   border-radius: 8px;
   border: none;
+  text-align: center;
 }
 
-button:hover {
+.button:hover {
   cursor: pointer;
   background: linear-gradient(
     90deg,
@@ -250,12 +251,12 @@ aside img {
     font-size: 3.5rem;
   }
 
-  form {
+  .form {
     padding: 0 3rem;
     gap: 2rem;
   }
 
-  input[type='email'] {
+  input {
     font-size: 1.1rem;
   }
 

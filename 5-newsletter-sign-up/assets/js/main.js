@@ -25,15 +25,15 @@ const validateEmail = () => {
 
     const clearErrorMsg = () => {
       errorMsg.style.display = 'none';
-      emailInput.style.border = 'initial';
-      emailInput.style.backgroundColor = 'initial';
-      emailInput.style.color = 'initial';
-      emailInput.value = 'initial';
+      emailInput.style.border = '';
+      emailInput.style.backgroundColor = '';
+      emailInput.style.color = '';
+      emailInput.value = '';
     };
 
     setTimeout(() => {
       clearErrorMsg();
-    }, 3500);
+    }, 3000);
   }
 };
 
@@ -47,7 +47,7 @@ const closeModalWindow = () => {
   aside.classList.toggle('hidden');
   mainEl.classList.toggle('hidden');
   headerEl.classList.toggle('hidden');
-  emailInput.value = 'initial';
+  emailInput.value = '';
 };
 
 dismissMsg.addEventListener('click', closeModalWindow);
