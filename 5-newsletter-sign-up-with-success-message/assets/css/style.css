@@ -273,12 +273,3 @@ aside img {
     font-size: 3.8rem;
   }
 }
-
-/* ========== Footer style ========== */
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
