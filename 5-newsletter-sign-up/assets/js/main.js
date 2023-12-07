@@ -33,11 +33,16 @@ const validateEmail = () => {
 
     setTimeout(() => {
       clearErrorMsg();
-    }, 3000);
+    }, 2500);
   }
 };
 
 submitBtn.addEventListener('click', validateEmail);
+emailInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    validateEmail();
+  }
+});
 
 // Success Message Disnmissal
 const dismissMsg = document.getElementById('close-btn');
