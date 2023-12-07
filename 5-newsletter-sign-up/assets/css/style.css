@@ -40,7 +40,7 @@
 
 h1,
 h2,
-label,
+.email-label,
 .button {
   font-family: var(--font-roboto-bold);
   color: var(--dark-slate-grey);
@@ -130,7 +130,7 @@ li {
   height: max-content;
 }
 
-label,
+.email-label,
 .error-message {
   font-size: 0.9rem;
 }
