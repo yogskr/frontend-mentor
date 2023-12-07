@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --font-roboto-regular: 'Roboto Regular';
+  --font-roboto-bold: 'Roboto Bold';
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --tomato: hsl(4, 100%, 67%);
+}
+
+.hidden {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+h1,
+h2,
+label,
+button {
+  font-family: var(--font-roboto-bold);
+  color: var(--dark-slate-grey);
+}
+
+p,
+input {
+  font-family: var(--font-roboto-regular);
+  color: var(--dark-slate-grey);
+  font-weight: 500;
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+header img {
+  width: 100%;
+  height: fit-content;
+}
+
+main {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ========== Sign-up form style ========== */
+article {
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+article h1 {
+  font-size: 2.5rem;
+}
+
+article p {
+  line-height: 1.5;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 25px 25px 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.text-label {
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+}
+
+label,
+.error-message {
+  font-size: 0.9rem;
+}
+
+.error-message {
+  display: none;
+  color: var(--tomato);
+  font-weight: 600;
+}
+
+input {
+  font-size: 1rem;
+  border: 1px solid var(--grey);
+  padding: 18px;
+  border-radius: 8px;
+  outline: 0;
+}
+
+button {
+  font-size: 1rem;
+  color: var(--white);
+  background: var(--dark-slate-grey);
+  padding: 18px;
+  border-radius: 8px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 87, 135, 1) 29%,
+    rgba(255, 98, 87, 1) 50%
+  );
+  box-shadow: 0px 10px 15px 3px rgba(255, 98, 87, 0.3);
+}
+
+/* ========== Success message style ========== */
+aside {
+  padding: 180px 25px 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+}
+
+aside img {
+  width: 4rem;
+  margin-bottom: 45px;
+}
+
+.success-message h2 {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.success-message p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.success-message p span {
+  font-weight: 600;
+}
+
+/* Responsive style */
+@media screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  html {
+    background-color: var(--dark-slate-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  main {
+    width: 50%;
+    gap: 3rem;
+  }
+
+  body {
+    background-color: var(--white);
+    flex-direction: row-reverse;
+    gap: 40px;
+    border-radius: 20px;
+    height: min-content;
+  }
+
+  header {
+    width: 50%;
+  }
+
+  header img {
+    scale: 0.9;
+  }
+
+  article {
+    padding: 0 3rem;
+    gap: 1.9rem;
+  }
+
+  article h1 {
+    font-size: 3.5rem;
+  }
+
+  form {
+    padding: 0 3rem;
+    gap: 2rem;
+  }
+
+  input[type='email'] {
+    font-size: 1.1rem;
+  }
+
+  ::placeholder {
+    font-size: 1.1rem;
+  }
+
+  aside {
+    padding: 50px;
+    width: 500px;
+    gap: 40px;
+  }
+
+  .success-message h2 {
+    font-size: 3.8rem;
+  }
+}

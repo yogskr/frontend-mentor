@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        alt="Mobile illustration"
+        class="mobile" />
+      <img
+        src="./assets/images/illustration-sign-up-desktop.svg"
+        alt="Desktop illustration"
+        class="desktop" />
+    </header>
+    <main id="signup-form">
+      <!-- Sign-up form end -->
+      <article>
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="Checklist icon" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="Checklist icon" />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="Checklist icon" />
+            <p>And much more!</p>
+          </li>
+        </ul>
+      </article>
+      <form id="form">
+        <div class="container">
+          <div class="text-label">
+            <label id="email-label">Email address</label>
+            <p id="error-msg" class="error-message">Valid email required</p>
+          </div>
+          <input id="email-input" placeholder="email@company.com" />
+        </div>
+        <button id="submit-btn">Subscribe to monthly newsletter</button>
+      </form>
+      <!-- Sign-up form end -->
+    </main>
+
+    <!-- Success message start -->
+    <aside id="success-msg" class="hidden">
+      <section class="success-message">
+        <img src="./assets/images/icon-list.svg" alt="Checklist icon" />
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to
+          <span id="email-address"></span>. Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+      </section>
+      <button id="close-btn">Dismiss message</button>
+    </aside>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
