@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Sign-up form end -->
     <header id="header">
       <img
         src="./assets/images/illustration-sign-up-mobile.svg"
@@ -23,7 +24,6 @@
         class="desktop" />
     </header>
     <main id="signup-form">
-      <!-- Sign-up form end -->
       <article>
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -46,7 +46,20 @@
         <div class="container">
           <div class="text-label">
             <p id="email-label" class="email-label">Email address</p>
-            <p id="error-msg" class="error-message">Valid email required</p>
+            <div id="error-msg" class="error-notification">
+              <img
+                src="./assets/images/error-icon.svg"
+                alt="Error icon"
+                class="error-icon" />
+              <p class="error-message">Valid email required</p>
+            </div>
+            <div id="warning-msg" class="warning-notification">
+              <img
+                src="./assets/images/warning-icon.svg"
+                alt="Warning icon"
+                class="warning-icon" />
+              <p class="warning-message">Email input required</p>
+            </div>
           </div>
           <input id="email-input" placeholder="email@company.com" />
         </div>
@@ -54,8 +67,8 @@
           Subscribe to monthly newsletter
         </div>
       </div>
-      <!-- Sign-up form end -->
     </main>
+    <!-- Sign-up form end -->
 
     <!-- Success message start -->
     <aside id="success-msg" class="hidden">
