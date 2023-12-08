@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-newsletter-sign-up-using-vanilla-javascript-and-css-flexbox-1dg0qxxaRt](https://www.frontendmentor.io/solutions/responsive-newsletter-sign-up-using-vanilla-javascript-and-css-flexbox-1dg0qxxaRt)
 - Live Site URL: [https://yogskr.github.io/frontend-mentor-challenges/5-newsletter-sign-up](https://yogskr.github.io/frontend-mentor-challenges/5-newsletter-sign-up)
 
 ## My process
