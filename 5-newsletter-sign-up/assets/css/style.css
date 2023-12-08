@@ -126,19 +126,40 @@ li {
 
 .text-label {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: max-content;
+  height: 1.5rem;
 }
 
 .email-label,
-.error-message {
+.error-message,
+.warning-message {
   font-size: 0.9rem;
 }
 
-.error-message {
-  display: none;
+.error-message,
+.warning-message {
   color: var(--tomato);
   font-weight: 600;
+}
+
+.error-notification,
+.warning-notification {
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+}
+
+.error-icon,
+.warning-icon {
+  width: 19px;
+}
+
+.custom-msg {
+  border: 1px solid var(--tomato);
+  background-color: rgba(255, 87, 135, 0.1);
+  color: var(--tomato);
 }
 
 input {
