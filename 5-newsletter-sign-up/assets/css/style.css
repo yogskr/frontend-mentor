@@ -74,7 +74,6 @@ header img {
 }
 
 main {
-  background-color: var(--white);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -125,9 +124,6 @@ li {
 }
 
 .text-label {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 1.5rem;
 }
 
@@ -145,10 +141,23 @@ li {
 
 .error-notification,
 .warning-notification {
-  display: none;
+  opacity: 0;
+  display: flex;
   align-items: flex-end;
   justify-content: center;
   gap: 5px;
+  transition: opacity 0.8s ease;
+}
+
+.error-notification {
+  position: relative;
+  left: 110px;
+}
+
+.warning-notification {
+  position: relative;
+  left: 110px;
+  bottom: 38px;
 }
 
 .error-icon,
