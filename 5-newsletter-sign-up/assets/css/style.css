@@ -57,20 +57,20 @@ input {
   color: var(--grey);
 }
 
+html {
+  background-color: var(--charcoal-grey);
+}
+
 body {
+  background-color: var(--white);
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 100vh;
 }
 
-header {
-  width: 100%;
-}
-
 header img {
   width: 100%;
-  height: fit-content;
 }
 
 main {
@@ -129,6 +129,9 @@ li {
   align-items: center;
   justify-content: space-between;
   height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .email-label,
@@ -235,7 +238,6 @@ aside img {
   }
 
   html {
-    background-color: var(--dark-slate-grey);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,7 +250,6 @@ aside img {
   }
 
   body {
-    background-color: var(--white);
     flex-direction: row-reverse;
     gap: 40px;
     border-radius: 40px;
