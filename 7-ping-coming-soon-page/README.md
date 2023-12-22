@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://yogskr.github.io/frontend-mentor/7-coming-soon-page](https://yogskr.github.io/frontend-mentor/7-ping-coming-soon-page)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-ping-coming-soon-page-with-css-flexbox-and-javascript-ql2I9nOTat](https://www.frontendmentor.io/solutions/responsive-ping-coming-soon-page-with-css-flexbox-and-javascript-ql2I9nOTat)
+- Live Site URL: [https://yogskr.github.io/frontend-mentor/7-ping-coming-soon-page](https://yogskr.github.io/frontend-mentor/7-ping-coming-soon-page)
 
 ## My process
 
