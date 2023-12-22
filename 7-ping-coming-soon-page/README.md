@@ -43,7 +43,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://yogskr.github.com/frontend-mentor/7-coming-soon-page](https://yogskr.github.com/frontend-mentor/7-coming-soon-page)
+- Live Site URL: [https://yogskr.github.com/frontend-mentor/7-coming-soon-page](https://yogskr.github.com/frontend-mentor/7-ping-coming-soon-page)
 
 ## My process
 
