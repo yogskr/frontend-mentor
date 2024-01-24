@@ -1,17 +1,21 @@
 'use strict';
 
-// ===== Hamburger menu =====
+// ===== Mobile hamburger menu =====
+
+// Get reference from the hamburger menu
 const hamburgerBtnOpen = document.querySelector('.hamburger-btn-open');
 const hamburgerBtnClose = document.querySelector('.hamburger-btn-close');
 const slideMenu = document.querySelector('.slide-menu');
 const overlay = document.querySelector('.overlay');
 
+// Add the click event listener to the hamburger menu
 hamburgerBtnOpen.addEventListener('click', () => {
   slideMenu.classList.toggle('flex');
   slideMenu.classList.toggle('hidden');
   overlay.classList.toggle('hidden');
 });
 
+// Add the click event listener to the hamburger menu
 hamburgerBtnClose.addEventListener('click', () => {
   slideMenu.classList.toggle('flex');
   slideMenu.classList.toggle('hidden');
@@ -20,26 +24,26 @@ hamburgerBtnClose.addEventListener('click', () => {
 
 // ===== Mobile drop-down menu =====
 
-// Get reference from Features
+// Get reference from the mobile Features menu
 const featuresDropDownMenu = document.querySelector('.features-drop-down-menu');
 const featuresSubNavMenu = document.querySelector('.features-sub-nav-link');
 const featuresArrowDown = document.querySelector('.features-arrow-down');
 const featuresArrowUp = document.querySelector('.features-arrow-up');
 
-// Add click event listener to Features
+// Add click event listener to the mobile Features menu
 featuresDropDownMenu.addEventListener('click', () => {
   featuresSubNavMenu.classList.toggle('hidden');
   featuresArrowDown.classList.toggle('hidden');
   featuresArrowUp.classList.toggle('hidden');
 });
 
-// Get reference from Company
+// Get reference from the mobile Company menu
 const companyDropDownMenu = document.querySelector('.company-drop-down-menu');
 const companySubNavMenu = document.querySelector('.company-sub-nav-link');
 const companyArrowDown = document.querySelector('.company-arrow-down');
 const companyArrowUp = document.querySelector('.company-arrow-up');
 
-// Add click event listener to Company
+// Add click event listener to the mobile Company menu
 companyDropDownMenu.addEventListener('click', () => {
   companySubNavMenu.classList.toggle('hidden');
   companyArrowDown.classList.toggle('hidden');
@@ -47,3 +51,29 @@ companyDropDownMenu.addEventListener('click', () => {
 });
 
 // ===== Desktop drop-down menu =====
+
+// Get reference from the deskop Features menu
+const desktopFeaturesMenu = document.querySelector('.desktop-features-menu');
+const desktopFeaturesSub = document.querySelector('.desktop-features-sub-menu');
+const desktopFeaturesUp = document.querySelector('.desktop-features-up');
+const desktopFeaturesDown = document.querySelector('.desktop-features-down');
+
+// Add click event listener to the desktop Features menu
+desktopFeaturesMenu.addEventListener('click', () => {
+  desktopFeaturesSub.classList.toggle('hidden');
+  desktopFeaturesDown.classList.toggle('hidden');
+  desktopFeaturesUp.classList.toggle('hidden');
+});
+
+// Get reference from the desktop Company menu
+const desktopCompanyMenu = document.querySelector('.desktop-company-menu');
+const desktopCompanySub = document.querySelector('.desktop-company-sub-menu');
+const desktopCompanyUp = document.querySelector('.desktop-company-up');
+const desktopCompanyDown = document.querySelector('.desktop-company-down');
+
+// Add the click event listener to the desktop Company menu
+desktopCompanyMenu.addEventListener('click', () => {
+  desktopCompanySub.classList.toggle('hidden');
+  desktopCompanyUp.classList.toggle('hidden');
+  desktopCompanyDown.classList.toggle('hidden');
+});
