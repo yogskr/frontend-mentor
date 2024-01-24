@@ -11,10 +11,10 @@
       href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
-  <body class="font-epilogue lg:text-[18px]">
+  <body class="font-epilogue bg-[#fafafa] lg:text-[18px]">
     <!-- overlay start -->
     <div
-      class="overlay fixed hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-zinc-950 bg-opacity-50"></div>
+      class="overlay fixed hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-[#202020] bg-opacity-50"></div>
     <!-- overlay end -->
     <header
       class="flex items-center justify-between lg:justify-start gap-14 p-6">
@@ -150,11 +150,53 @@
                 alt="Arrow down illustration"
                 class="desktop-features-up hidden" />
             </div>
+            <ul
+              class="desktop-features-sub-menu p-5 bg-white absolute rounded-lg shadow-[0_0_30px_3px_rgba(0,0,0,0.3)] top-24 left-20 hidden">
+              <li
+                class="mb-3 flex items-start gap-3 hover:text-[#141414] hover:cursor-pointer">
+                <figure class="w-8 flex items-center justify-center">
+                  <img
+                    src="./assets/images/icon-todo.svg"
+                    alt="A todo list icon"
+                    class="w-4.5 h-5" />
+                </figure>
+                <a href="#">Todo List</a>
+              </li>
+              <li
+                class="mb-3 flex items-start gap-3 hover:text-[#141414] hover:cursor-pointer">
+                <figure class="w-8 flex items-center justify-center">
+                  <img
+                    src="./assets/images/icon-calendar.svg"
+                    alt="A calendar icon"
+                    class="w-4.5 h-5" />
+                </figure>
+                <a href="#">Calendar</a>
+              </li>
+              <li
+                class="mb-3 flex items-start gap-3 hover:text-[#141414] hover:cursor-pointer">
+                <figure class="w-8 flex items-center justify-center">
+                  <img
+                    src="./assets/images/icon-reminders.svg"
+                    alt="A bell icon"
+                    class="w-4.5 h-5" />
+                </figure>
+                <a href="#">Reminders</a>
+              </li>
+              <li
+                class="flex items-start gap-3 hover:text-[#141414] hover:cursor-pointer">
+                <figure class="w-8 flex items-center justify-center">
+                  <img
+                    src="./assets/images/icon-planning.svg"
+                    alt="An analog clock icon"
+                    class="w-4.5 h-5" />
+                </figure>
+                <a href="#">Planning</a>
+              </li>
+            </ul>
           </li>
           <li>
             <div
-              id="desktop-company-menu"
-              class="lg:flex items-center gap-2 hover:text-[#141414] hover:cursor-pointer">
+              class="desktop-company-menu lg:flex items-center gap-2 hover:text-[#141414] hover:cursor-pointer">
               <a href="#">Company</a>
               <img
                 src="./assets/images/icon-arrow-down.svg"
@@ -163,22 +205,35 @@
               <img
                 src="./assets/images/icon-arrow-up.svg"
                 alt="Arrow down illustration"
-                id="company-arrow-up"
                 class="desktop-company-up hidden" />
             </div>
+            <ul
+              class="desktop-company-sub-menu p-5 bg-white absolute rounded-lg shadow-[0_0_30px_3px_rgba(0,0,0,0.3)] top-24 hidden">
+              <li class="mb-3 hover:text-[#141414] hover:cursor-pointer">
+                <a href="#">History</a>
+              </li>
+              <li class="mb-3 hover:text-[#141414] hover:cursor-pointer">
+                <a href="#">Our Team</a>
+              </li>
+              <li class="hover:text-[#141414] hover:cursor-pointer">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
           </li>
-          <li>
+          <li class="hover:text-[#141414] hover:cursor-pointer">
             <a href="#">Careers</a>
           </li>
-          <li>
+          <li class="hover:text-[#141414] hover:cursor-pointer">
             <a href="#">About</a>
           </li>
         </ul>
-        <ul class="hidden login-modal lg:flex gap-12">
-          <li>
+        <ul
+          class="hidden login-modal lg:flex items-center gap-12 text-[#696969]">
+          <li class="hover:text-[#141414] hover:cursor-pointer">
             <a href="#">Login</a>
           </li>
-          <li>
+          <li
+            class="border-2 border-[#696969] hover:border-[#141414] rounded-xl w-full flex items-center justify-center py-3 px-4 hover:text-[#141414] hover:cursor-pointer">
             <a href="#">Register</a>
           </li>
         </ul>
