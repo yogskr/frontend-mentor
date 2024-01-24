@@ -58,22 +58,54 @@ const desktopFeaturesSub = document.querySelector('.desktop-features-sub-menu');
 const desktopFeaturesUp = document.querySelector('.desktop-features-up');
 const desktopFeaturesDown = document.querySelector('.desktop-features-down');
 
-// Add click event listener to the desktop Features menu
-desktopFeaturesMenu.addEventListener('click', () => {
-  desktopFeaturesSub.classList.toggle('hidden');
-  desktopFeaturesDown.classList.toggle('hidden');
-  desktopFeaturesUp.classList.toggle('hidden');
-});
-
 // Get reference from the desktop Company menu
 const desktopCompanyMenu = document.querySelector('.desktop-company-menu');
 const desktopCompanySub = document.querySelector('.desktop-company-sub-menu');
 const desktopCompanyUp = document.querySelector('.desktop-company-up');
 const desktopCompanyDown = document.querySelector('.desktop-company-down');
 
+// Add click event listener to the desktop Features menu
+desktopFeaturesMenu.addEventListener('click', () => {
+  desktopFeaturesSub.classList.toggle('hidden');
+  desktopFeaturesDown.classList.toggle('hidden');
+  desktopFeaturesUp.classList.toggle('hidden');
+
+  if (!desktopCompanyMenu.classList.contains('hidden')) {
+    desktopCompanySub.classList.add('hidden');
+  } else {
+    return false;
+  }
+});
+
+// Add the keypress event listener to the desktop Features menu
+desktopFeaturesMenu.addEventListener('keydown', (e) => {
+  const escapeKey = e.keyCode;
+  if (escapeKey === 27) {
+    desktopFeaturesSub.classList.add('hidden');
+    desktopFeaturesDown.classList.remove('hidden');
+    desktopFeaturesUp.classList.add('hidden');
+  }
+});
+
 // Add the click event listener to the desktop Company menu
 desktopCompanyMenu.addEventListener('click', () => {
   desktopCompanySub.classList.toggle('hidden');
   desktopCompanyUp.classList.toggle('hidden');
   desktopCompanyDown.classList.toggle('hidden');
+
+  if (!desktopFeaturesMenu.classList.contains('hidden')) {
+    desktopFeaturesSub.classList.add('hidden');
+  } else {
+    return false;
+  }
+});
+
+// Add the keypress event listener to the desktop Company menu
+desktopCompanyMenu.addEventListener('keydown', (e) => {
+  const escapeKey = e.keyCode;
+  if (escapeKey === 27) {
+    desktopCompanySub.classList.add('hidden');
+    desktopCompanyUp.classList.remove('hidden');
+    desktopCompanyDown.classList.add('hidden');
+  }
 });
