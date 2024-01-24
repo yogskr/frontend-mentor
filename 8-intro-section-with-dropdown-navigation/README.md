@@ -27,15 +27,17 @@ Users should be able to:
 ### Screenshot
 
 **Mobile Screenshot**
+
 ![Mobile Screenshot](./assets/images/mobile-screenshot.png)
 
 **Desktop Screenshot**
+
 ![Desktop Screenshot](./assets/images/desktop-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-intro-section-using-tailwind-css-and-vanilla-javascript-\_JfOUieJTd](https://www.frontendmentor.io/solutions/responsive-intro-section-using-tailwind-css-and-vanilla-javascript-_JfOUieJTd)
+- Live Site URL: [https://yogskr.github.io/frontend-mentor/8-intro-section-with-dropdown-navigation/](https://yogskr.github.io/frontend-mentor/8-intro-section-with-dropdown-navigation/)
 
 ## My process
 
