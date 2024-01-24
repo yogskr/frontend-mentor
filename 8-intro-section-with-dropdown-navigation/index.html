@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body class="font-epilogue lg:text-[18px]">
+    <!-- overlay start -->
+    <div
+      class="overlay fixed hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-zinc-950 bg-opacity-50"></div>
+    <!-- overlay end -->
+    <header
+      class="flex items-center justify-between lg:justify-start gap-14 p-6">
+      <!-- logo start -->
+      <img src="./assets/images/logo.svg" alt="Snap logo illustration" />
+      <!-- logo end -->
+
+      <!-- mobile navigation bar start -->
+      <nav class="lg:hidden">
+        <img
+          src="./assets/images/icon-menu.svg"
+          alt="Hamburger menu illustration"
+          class="hamburger-btn-open hover:cursor-pointer" />
+        <ul
+          class="slide-menu nav-menu-start absolute bg-white max-h-screen w-2/3 p-6 inset-x-1/3 inset-y-0 flex-col text-[#696969] z-10 hidden">
+          <img
+            src="./assets/images/icon-close-menu.svg"
+            alt="Hamburger menu close illustration"
+            class="hamburger-btn-close self-end mb-7 hover:cursor-pointer" />
+          <li class="nav-link">
+            <div
+              class="features-drop-down-menu flex items-center gap-3 mb-4 hover:text-[#141414] hover:cursor-pointer">
+              <a href="#">Features</a>
+              <img
+                src="./assets/images/icon-arrow-down.svg"
+                alt="Arrow down illustration"
+                class="features-arrow-down" />
+              <img
+                src="./assets/images/icon-arrow-up.svg"
+                alt="Arrow down illustration"
+                class="features-arrow-up hidden" />
+            </div>
+            <ul class="features-sub-nav-link pl-4 hidden">
+              <li
+                class="mb-3 flex items-start gap-3 hover:text-[#141414] hover:cursor-pointer">
+                <figure class="w-8 flex items-center justify-center">
+                  <img
+                    src="./assets/images/icon-todo.svg"
+                    alt="A todo list icon"
+                    class="w-4.5 h-5" />
+                </figure>
+                <a href="#">Todo List</a>
+              </li>
+              <li
+                class="mb-3 flex items-start gap-3 hover:text-[#141414] hover:cursor-pointer">
+                <figure class="w-8 flex items-center justify-center">
+                  <img
+                    src="./assets/images/icon-calendar.svg"
+                    alt="A calendar icon"
+                    class="w-4.5 h-5" />
+                </figure>
+                <a href="#">Calendar</a>
+              </li>
+              <li
+                class="mb-3 flex items-start gap-3 hover:text-[#141414] hover:cursor-pointer">
+                <figure class="w-8 flex items-center justify-center">
+                  <img
+                    src="./assets/images/icon-reminders.svg"
+                    alt="A bell icon"
+                    class="w-4.5 h-5" />
+                </figure>
+                <a href="#">Reminders</a>
+              </li>
+              <li
+                class="mb-4 flex items-start gap-3 hover:text-[#141414] hover:cursor-pointer">
+                <figure class="w-8 flex items-center justify-center">
+                  <img
+                    src="./assets/images/icon-planning.svg"
+                    alt="An analog clock icon"
+                    class="w-4.5 h-5" />
+                </figure>
+                <a href="#">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-link">
+            <div
+              class="company-drop-down-menu flex items-center gap-2 mb-4 hover:text-[#141414] hover:cursor-pointer">
+              <a href="#">Company</a>
+              <img
+                src="./assets/images/icon-arrow-down.svg"
+                alt="Arrow down illustration"
+                class="company-arrow-down" />
+              <img
+                src="./assets/images/icon-arrow-up.svg"
+                alt="Arrow down illustration"
+                class="company-arrow-up hidden" />
+            </div>
+            <ul class="company-sub-nav-link pl-6 hidden">
+              <li class="mb-3 hover:text-[#141414] hover:cursor-pointer">
+                <a href="#">History</a>
+              </li>
+              <li class="mb-3 hover:text-[#141414] hover:cursor-pointer">
+                <a href="#">Our Team</a>
+              </li>
+              <li class="mb-3 hover:text-[#141414] hover:cursor-pointer">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-link mb-3 hover:text-[#141414] hover:cursor-pointer">
+            <a href="#">Careers</a>
+          </li>
+          <li class="nav-link mb-8 hover:text-[#141414] hover:cursor-pointer">
+            <a href="#">About</a>
+          </li>
+          <ul class="mobile-cta-btn flex flex-col items-center justify-center">
+            <li class="mb-3 hover:text-[#141414] hover:cursor-pointer">
+              <a href="#">Login</a>
+            </li>
+            <li
+              class="border-2 border-[#696969] hover:border-[#141414] rounded-xl w-full flex items-center justify-center p-1.5 hover:text-[#141414] hover:cursor-pointer">
+              <a href="#">Register</a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+      <!-- mobile navigation bar end -->
+
+      <!-- desktop navigation start -->
+      <nav class="hidden lg:flex lg:w-full lg:items-center lg:justify-between">
+        <ul class="text-[#696969] flex gap-12">
+          <li>
+            <div
+              class="desktop-features-menu lg:flex items-center gap-2 hover:text-[#141414] hover:cursor-pointer">
+              <a href="#">Features</a>
+              <img
+                src="./assets/images/icon-arrow-down.svg"
+                alt="Arrow down illustration"
+                class="desktop-features-down" />
+              <img
+                src="./assets/images/icon-arrow-up.svg"
+                alt="Arrow down illustration"
+                class="desktop-features-up hidden" />
+            </div>
+          </li>
+          <li>
+            <div
+              id="desktop-company-menu"
+              class="lg:flex items-center gap-2 hover:text-[#141414] hover:cursor-pointer">
+              <a href="#">Company</a>
+              <img
+                src="./assets/images/icon-arrow-down.svg"
+                alt="Arrow down illustration"
+                class="desktop-company-down" />
+              <img
+                src="./assets/images/icon-arrow-up.svg"
+                alt="Arrow down illustration"
+                id="company-arrow-up"
+                class="desktop-company-up hidden" />
+            </div>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+        <ul class="hidden login-modal lg:flex gap-12">
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Register</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- desktop navigation end -->
+    </header>
+    <main>
+      <img
+        src="./assets/images/image-hero-mobile.png"
+        alt="A man holding a laptop"
+        class="hero-img mb-12" />
+      <section class="hero-section flex flex-col items-center justify-center">
+        <h1 class="hero-heading text-4xl font-semibold text-[#141414] mb-5">
+          Make remote work
+        </h1>
+        <p class="hero-text text-center w-[22rem] text-[#696969] mb-5">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button
+          class="border-2 border-[#141414] rounded-xl bg-[#141414] hover:bg-white text-white hover:text-[#141414] font-semibold px-4 py-2 mb-12">
+          Learn more
+        </button>
+        <div class="clients-section w-full flex items-center justify-around">
+          <!-- databiz -->
+          <img
+            src="./assets/images/client-databiz.svg"
+            alt="Databiz logo"
+            class="w-20" />
+          <!-- audiophile -->
+          <img
+            src="./assets/images/client-audiophile.svg"
+            alt="Audiophile logo"
+            class="w-12" />
+          <!-- meet -->
+          <img
+            src="./assets/images/client-meet.svg"
+            alt="Meet logo"
+            class="w-16" />
+          <!-- maker -->
+          <img
+            src="./assets/images/client-maker.svg"
+            alt="Maker logo"
+            class="w-16" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Script -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
