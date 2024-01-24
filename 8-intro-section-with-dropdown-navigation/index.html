@@ -240,46 +240,63 @@
       </nav>
       <!-- desktop navigation end -->
     </header>
-    <main>
-      <img
-        src="./assets/images/image-hero-mobile.png"
-        alt="A man holding a laptop"
-        class="hero-img mb-12" />
-      <section class="hero-section flex flex-col items-center justify-center">
-        <h1 class="hero-heading text-4xl font-semibold text-[#141414] mb-5">
-          Make remote work
-        </h1>
-        <p class="hero-text text-center w-[22rem] text-[#696969] mb-5">
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button
-          class="border-2 border-[#141414] rounded-xl bg-[#141414] hover:bg-white text-white hover:text-[#141414] font-semibold px-4 py-2 mb-12">
-          Learn more
-        </button>
-        <div class="clients-section w-full flex items-center justify-around">
-          <!-- databiz -->
-          <img
-            src="./assets/images/client-databiz.svg"
-            alt="Databiz logo"
-            class="w-20" />
-          <!-- audiophile -->
-          <img
-            src="./assets/images/client-audiophile.svg"
-            alt="Audiophile logo"
-            class="w-12" />
-          <!-- meet -->
-          <img
-            src="./assets/images/client-meet.svg"
-            alt="Meet logo"
-            class="w-16" />
-          <!-- maker -->
-          <img
-            src="./assets/images/client-maker.svg"
-            alt="Maker logo"
-            class="w-16" />
-        </div>
-      </section>
+    <main class="lg:flex flex-col items-center">
+      <!-- main content start -->
+      <div
+        class="container flex flex-col items-center justify-center lg:flex-row-reverse lg:w-[78%] lg:gap-20">
+        <!-- mobile hero illustration image -->
+        <img
+          src="./assets/images/image-hero-mobile.png"
+          alt="A man holding a laptop"
+          class="hero-img mb-12 lg:hidden" />
+
+        <!-- desktop hero illustration image -->
+        <figure class="hidden lg:block w-auto">
+          <img src="./assets/images/image-hero-desktop.png" alt="" />
+        </figure>
+        <section
+          class="hero-section flex flex-col items-center justify-center lg:w-3/4 lg:items-start lg:self-end">
+          <h1
+            class="hero-heading text-4xl font-semibold text-[#141414] mb-5 lg:text-7xl lg:text-left lg:mb-12">
+            Make remote work
+          </h1>
+          <p
+            class="hero-text text-center w-[22rem] text-[#696969] mb-5 lg:text-left lg:w-[95%] lg:mb-12">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button
+            class="border-2 border-[#141414] rounded-xl bg-[#141414] hover:bg-white text-white hover:text-[#141414] font-semibold px-4 py-2 mb-12 lg:mb-52">
+            Learn more
+          </button>
+          <!-- client section start -->
+          <div
+            class="clients-section w-full flex items-center justify-around lg:justify-between">
+            <!-- databiz -->
+            <img
+              src="./assets/images/client-databiz.svg"
+              alt="Databiz logo"
+              class="w-20 lg:w-28" />
+            <!-- audiophile -->
+            <img
+              src="./assets/images/client-audiophile.svg"
+              alt="Audiophile logo"
+              class="w-12 lg:w-20" />
+            <!-- meet -->
+            <img
+              src="./assets/images/client-meet.svg"
+              alt="Meet logo"
+              class="w-16 lg:w-24" />
+            <!-- maker -->
+            <img
+              src="./assets/images/client-maker.svg"
+              alt="Maker logo"
+              class="w-16 lg:w-24" />
+          </div>
+          <!-- client section end -->
+        </section>
+        <!-- main content end -->
+      </div>
     </main>
 
     <!-- Script -->
