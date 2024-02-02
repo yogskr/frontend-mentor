@@ -270,6 +270,8 @@ p {
   /* General Styling */
   body {
     width: 1440px;
+    height: 100vh;
+    scale: 80%;
   }
 
   header {
@@ -310,6 +312,10 @@ p {
   }
 
   .hamburger-menu {
+    display: none;
+  }
+
+  .nav-menu {
     display: none;
   }
 
