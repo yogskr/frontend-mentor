@@ -270,7 +270,6 @@ p {
   /* General Styling */
   body {
     width: 1440px;
-    margin: 1.6rem;
   }
 
   header {
@@ -318,12 +317,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.2rem;
+    gap: 3.5rem;
     list-style-type: none;
   }
 
   .nav-menu-desktop li p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     color: var(--dark-grayish-blue);
   }
 
@@ -351,7 +350,7 @@ p {
   }
 
   .headline-desc {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.4;
     margin-bottom: 3.5rem;
   }
@@ -375,7 +374,7 @@ p {
   }
 
   .new-item p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.6;
   }
 
@@ -408,6 +407,6 @@ p {
   }
 
   .post-desc p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 }
