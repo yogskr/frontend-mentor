@@ -100,6 +100,10 @@ p {
   transition: all 0.2s ease;
 }
 
+.nav-menu-desktop {
+  display: none;
+}
+
 .hamburger-menu {
   cursor: pointer;
 }
@@ -113,15 +117,16 @@ p {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 45%;
+  justify-content: space-between;
+  height: 250px;
 }
 
-li p {
-  font-size: 1rem;
+.nav-link li p {
+  color: var(--very-dark-blue);
+  font-size: 1.1rem;
 }
 
-li:hover {
+.nav-link li p:hover {
   cursor: pointer;
   color: var(--soft-red);
 }
@@ -137,9 +142,13 @@ li:hover {
 }
 
 /* Hero Sectin Styling */
-.hero-image {
+.hero-image-mobile {
   width: 100%;
   margin-bottom: 25px;
+}
+
+.hero-image-desktop {
+  display: none;
 }
 
 .headline-text {
@@ -160,7 +169,7 @@ li:hover {
   border: none;
   background-color: var(--soft-red);
   color: var(--off-white);
-  padding: 12px 36px;
+  padding: 15px 36px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   transition: all 0.3s ease-out;
@@ -215,9 +224,8 @@ li:hover {
 /* Post Section Styling */
 .post-item {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
-  height: 100%;
 }
 
 .post-item-2 {
@@ -226,7 +234,7 @@ li:hover {
 
 .post-image {
   height: auto;
-  width: 30%;
+  width: 25%;
 }
 
 .post-desc {
@@ -234,7 +242,6 @@ li:hover {
   flex-direction: column;
   justify-content: space-between;
   height: auto;
-  width: 60%;
 }
 
 .post-desc h2 {
@@ -256,4 +263,144 @@ li:hover {
 .post-desc p {
   color: var(--dark-grayish-blue);
   line-height: 1.6;
+}
+
+/* Media Query Min-Width: 1024px */
+@media screen and (min-width: 1024px) {
+  /* General Styling */
+  body {
+    width: 1440px;
+  }
+
+  header {
+    margin-bottom: 3rem;
+  }
+
+  /* Grid Layout for Desktop View */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      'hero-image hero-image new'
+      'hero-headline hero-desc new'
+      'post-item post-item post-item';
+    gap: 2rem;
+  }
+
+  .hero-image-desktop {
+    grid-area: hero-image;
+  }
+
+  .headline-text {
+    grid-area: hero-headline;
+  }
+
+  .headline-desc-container {
+    grid-area: hero-desc;
+  }
+
+  .new-section {
+    grid-area: new;
+  }
+
+  /* Header Styling */
+  .logo {
+    width: initial;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-menu-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    list-style-type: none;
+  }
+
+  .nav-menu-desktop li p {
+    font-size: 1.3rem;
+  }
+
+  /* Hero Seciton Styling */
+  .hero-image-mobile {
+    display: none;
+  }
+
+  .hero-image-desktop {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .headline-text {
+    place-self: center;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+
+  .headline-desc {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 3.5rem;
+  }
+
+  .read-more {
+    font-size: 1.1rem;
+  }
+
+  /* New Seciton Styling */
+  .new-section {
+    margin: 0;
+  }
+
+  .new-section h2 {
+    font-size: 3.5rem;
+  }
+
+  .new-item h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .new-item p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  .item-1 p,
+  .item-2 p {
+    margin-bottom: 3rem;
+  }
+
+  /* Post Section Styling */
+  .post-item {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .post-item-2 {
+    margin: 3rem 0 0 0;
+  }
+
+  .post-desc {
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .post-desc h2 {
+    font-size: 2.5rem;
+  }
+
+  .post-desc h3 {
+    font-size: 1.5rem;
+  }
+
+  .post-desc p {
+    font-size: 1.3rem;
+  }
 }
