@@ -1,0 +1,259 @@
+@font-face {
+  font-family: InterRegular;
+  src: url(./fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url(./fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: InterExtraBold;
+  src: url(./fonts/static/Inter-ExtraBold.ttf);
+}
+
+:root {
+  /* Custom Fonts */
+  --font-inter-regular: InterRegular;
+  --font-inter-bold: InterBold;
+  --font-inter-extra-bold: InterExtraBold;
+
+  /* Primary Colors */
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+
+  /* Neutral Colors */
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--off-white);
+  width: 375px;
+  padding: 25px 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+p {
+  font-family: var(--font-inter-regular);
+  font-size: 15px;
+}
+
+/* .hidden class for JavaScript */
+.hidden {
+  display: none;
+}
+
+/* .overlay class for JavaScript */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(240, 100%, 5%, 0.4);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.2s ease;
+}
+
+/* Header Styling */
+.logo {
+  width: 3rem;
+}
+
+.nav-menu {
+  padding: 25px;
+  background-color: var(--off-white);
+  list-style: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  transform: translateX(100%);
+  transition: all 0.2s ease;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.close-menu {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.nav-link {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 45%;
+}
+
+li p {
+  font-size: 1rem;
+}
+
+li:hover {
+  cursor: pointer;
+  color: var(--soft-red);
+}
+
+.active-nav-menu {
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.active-overlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Hero Sectin Styling */
+.hero-image {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.headline-text {
+  font-family: var(--font-inter-extra-bold);
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.headline-desc {
+  color: var(--dark-grayish-blue);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  font-family: var(--font-inter-bold);
+  border: none;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  padding: 12px 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s ease-out;
+}
+
+.read-more:hover {
+  cursor: pointer;
+  background-color: var(--very-dark-blue);
+}
+
+/* New Section Styling */
+.new-section {
+  font-family: var(--font-inter-bold);
+  padding: 25px;
+  background-color: var(--very-dark-blue);
+  margin: 60px 0;
+}
+
+.new-section h2 {
+  color: var(--soft-orange);
+  font-size: 1.9rem;
+}
+
+.new-item h3 {
+  color: var(--off-white);
+  margin-bottom: 8px;
+}
+
+.new-item h3:hover {
+  cursor: pointer;
+  color: var(--soft-orange);
+}
+
+.new-item p {
+  color: var(--dark-grayish-blue);
+}
+
+.item-1 p,
+.item-2 p {
+  margin-bottom: 25px;
+}
+
+.item-1,
+.item-2 {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+.new-item {
+  margin-top: 25px;
+}
+
+/* Post Section Styling */
+.post-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.post-item-2 {
+  margin: 25px 0;
+}
+
+.post-image {
+  height: auto;
+  width: 30%;
+}
+
+.post-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  width: 60%;
+}
+
+.post-desc h2 {
+  font-size: 2rem;
+  font-family: var(--font-inter-bold);
+  color: var(--grayish-blue);
+}
+
+.post-desc h3 {
+  font-size: 1.1rem;
+  font-family: var(--font-inter-extra-bold);
+}
+
+.post-desc h3:hover {
+  cursor: pointer;
+  color: var(--soft-red);
+}
+
+.post-desc p {
+  color: var(--dark-grayish-blue);
+  line-height: 1.6;
+}
