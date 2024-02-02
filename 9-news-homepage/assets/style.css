@@ -204,7 +204,7 @@ p {
 }
 
 .new-item p {
-  color: var(--dark-grayish-blue);
+  color: var(--grayish-blue);
 }
 
 .item-1 p,
@@ -270,6 +270,7 @@ p {
   /* General Styling */
   body {
     width: 1440px;
+    margin: 1.6rem;
   }
 
   header {
