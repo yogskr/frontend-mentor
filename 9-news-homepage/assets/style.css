@@ -323,6 +323,12 @@ p {
 
   .nav-menu-desktop li p {
     font-size: 1.3rem;
+    color: var(--dark-grayish-blue);
+  }
+
+  .nav-menu-desktop li p:hover {
+    cursor: pointer;
+    color: var(--soft-red);
   }
 
   /* Hero Seciton Styling */
