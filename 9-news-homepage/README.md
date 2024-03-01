@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-news-homepage-with-css-grid-and-flexbox-oMdOdKrMr0](https://www.frontendmentor.io/solutions/responsive-news-homepage-with-css-grid-and-flexbox-oMdOdKrMr0)
 - Live Site URL: [https://yogskr.github.io/frontend-mentor/9-news-homepage/](https://yogskr.github.io/frontend-mentor/9-news-homepage/)
 
 ## My process
