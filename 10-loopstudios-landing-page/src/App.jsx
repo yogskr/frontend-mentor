@@ -1,6 +1,7 @@
 import NavMenuMobile from './components/NavMobile';
-import Header from './components/Header';
-import About from './components/About';
+import Header from './pages/Header';
+import About from './pages/About';
+import Projects from './pages/Projects';
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
         <NavMenuMobile />
       </Header>
       <About />
+      <Projects />
     </>
   );
 }
