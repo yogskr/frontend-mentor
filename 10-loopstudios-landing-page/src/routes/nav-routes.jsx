@@ -1,27 +1,27 @@
 export const navTexts = [
   {
     id: 0,
-    href: '#',
-    title: 'ABOUT',
+    href: "",
+    title: "ABOUT",
   },
   {
     id: 1,
-    href: '#',
-    title: 'CAREERS',
+    href: "#",
+    title: "CAREERS",
   },
   {
     id: 2,
-    href: '#',
-    title: 'EVENTS',
+    href: "#",
+    title: "EVENTS",
   },
   {
     id: 3,
-    href: '#',
-    title: 'PRODUCTS',
+    href: "#",
+    title: "PRODUCTS",
   },
   {
     id: 4,
-    href: '#',
-    title: 'SUPPORT',
+    href: "#",
+    title: "SUPPORT",
   },
 ];
