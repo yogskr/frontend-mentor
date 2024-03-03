@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="flex flex-col items-center gap-10 px-6 py-20">
+    <section className="flex flex-col items-center gap-10 px-5 pb-10 pt-20">
       <img
         src="./src/assets/images/mobile/image-interactive.jpg"
         alt="A man playing with a VR device"

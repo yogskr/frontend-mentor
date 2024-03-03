@@ -36,7 +36,7 @@ export default function NavMenuMobile() {
   return (
     <nav ref={ref} className="lg:hidden">
       <div
-        className={`fixed left-0 right-0 z-20 flex items-center justify-between px-6 py-8 ${
+        className={`fixed left-0 right-0 z-20 flex items-center justify-between px-5 py-8 ${
           scrolled
             ? "backdrop-blur-lg backdrop-brightness-75"
             : "bg-transparent"
@@ -46,7 +46,7 @@ export default function NavMenuMobile() {
         <Hamburger toggled={isOpen} toggle={setIsOpen} color="#fff" />
       </div>
       {isOpen && (
-        <div className="fixed bottom-0 right-0 z-10 h-full w-full bg-black px-6 py-8 text-white">
+        <div className="fixed bottom-0 right-0 z-10 h-full w-full bg-black px-5 py-8 text-white">
           <ul className="flex h-full flex-col justify-center gap-6 font-josefinSans text-2xl font-light">
             {navItems}
           </ul>
