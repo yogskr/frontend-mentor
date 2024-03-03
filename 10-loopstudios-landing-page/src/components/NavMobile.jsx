@@ -28,7 +28,12 @@ export default function NavMenuMobile() {
   }, [scrolled]);
 
   const navItems = navTexts.map((text) => (
-    <li className="group hover:cursor-pointer" key={text.id} href={text.href}>
+    <li
+      className="group relative hover:cursor-pointer hover:border-b-2 hover:border-white hover:pb-3 hover:transition-all"
+      // className="group relative hover:cursor-pointer hover:border-white hover:pb-3 hover:before:absolute hover:before:bottom-0 hover:before:left-auto hover:before:right-[1.7rem] hover:before:h-2 hover:before:w-1/2 hover:before:border-b-2 hover:before:content-['']"
+      key={text.id}
+      href={text.href}
+    >
       {text.title}
     </li>
   ));
@@ -47,7 +52,7 @@ export default function NavMenuMobile() {
       </div>
       {isOpen && (
         <div className="fixed bottom-0 right-0 z-10 h-full w-full bg-black px-5 py-8 text-white">
-          <ul className="flex h-full flex-col justify-center gap-6 font-josefinSans text-2xl font-light">
+          <ul className="flex h-full flex-col items-start justify-center gap-6 font-josefinSans text-2xl font-light">
             {navItems}
           </ul>
         </div>
