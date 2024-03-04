@@ -1,7 +1,8 @@
-import NavMenuMobile from './components/NavMobile';
-import Header from './pages/Header';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import NavMenuMobile from "./components/NavMobile";
+import Header from "./pages/Header";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Footer from "./pages/Footer";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       </Header>
       <About />
       <Projects />
+      <Footer />
     </>
   );
 }
