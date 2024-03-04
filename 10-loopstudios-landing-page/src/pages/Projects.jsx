@@ -1,4 +1,4 @@
-import { projectTexts } from "../routes/projects-routes";
+import { projectTexts } from "../assets/routes/projects-routes";
 
 export default function Projects() {
   const projectItems = projectTexts.map((text) => (

@@ -1,7 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { navTexts } from "../routes/nav-routes";
-import { icons } from "../routes/icons";
+import { navTexts } from "../assets/routes/nav-routes";
+import { icons } from "../assets/routes/icons";
+import uppercaseLetter from "../assets/helpers/helper";
 
 export default function NavMenuMobile() {
   // State variables to manage navigation bar functionality
@@ -29,12 +30,11 @@ export default function NavMenuMobile() {
 
   const navItems = navTexts.map((text) => (
     <li
-      className="group relative hover:cursor-pointer hover:border-b-2 hover:border-white hover:pb-3 hover:transition-all"
+      className="group hover:cursor-pointer hover:border-b-2 hover:border-white hover:pb-3 hover:transition-all"
       // className="group relative hover:cursor-pointer hover:border-white hover:pb-3 hover:before:absolute hover:before:bottom-0 hover:before:left-auto hover:before:right-[1.7rem] hover:before:h-2 hover:before:w-1/2 hover:before:border-b-2 hover:before:content-['']"
       key={text.id}
-      href={text.href}
     >
-      {text.title}
+      {uppercaseLetter(text.title)}
     </li>
   ));
 
