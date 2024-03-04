@@ -1,0 +1,12 @@
+import { social } from "../assets/routes/icons";
+
+export default function SocialMedia() {
+  return social.map((image) => (
+    <figure
+      key={image.id}
+      className="group flex h-10 items-center hover:cursor-pointer hover:border-b-2 hover:border-white hover:pb-3 hover:transition-all"
+    >
+      <img src={image.src} alt={image.alt} />
+    </figure>
+  ));
+}
