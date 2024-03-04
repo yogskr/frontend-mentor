@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { icons } from "../assets/routes/icons";
+import { logo } from "../assets/routes/icons";
 import NavMenu from "./NavMenu";
 
 export default function NavMenuMobile() {
@@ -36,7 +36,7 @@ export default function NavMenuMobile() {
             : "bg-transparent"
         }`}
       >
-        <img src={icons.logo} alt="loopstudios logo" />
+        <img src={logo.src} alt={logo.src} />
         <Hamburger toggled={isOpen} toggle={setIsOpen} color="#fff" />
       </div>
       {isOpen && (
