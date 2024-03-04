@@ -85,3 +85,8 @@ export const projectListTexts = [
     background: "bg-fishEye",
   },
 ];
+
+// Footer
+export const footerText = {
+  title: "© 2024 Loopstudios. All rights reserved.",
+};
