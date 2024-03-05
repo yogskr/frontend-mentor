@@ -10,8 +10,10 @@ export default function App() {
       <Header>
         <NavMenuMobile />
       </Header>
-      <About />
-      <Projects />
+      <main>
+        <About />
+        <Projects />
+      </main>
       <Footer />
     </>
   );
