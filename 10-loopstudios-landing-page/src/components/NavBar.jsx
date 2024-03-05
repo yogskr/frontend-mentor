@@ -3,7 +3,7 @@ import { Squash as Hamburger } from "hamburger-react";
 import { logo } from "../assets/routes/images-data";
 import NavMenu from "./NavMenu";
 
-export default function NavMenuMobile() {
+export default function NavBar() {
   // State variables to manage navigation bar functionality
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
