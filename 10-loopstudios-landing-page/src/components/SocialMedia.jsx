@@ -1,4 +1,4 @@
-import { social } from "../assets/routes/icons";
+import { social } from "../assets/routes/images-data";
 
 export default function SocialMedia() {
   return social.map((image) => (
