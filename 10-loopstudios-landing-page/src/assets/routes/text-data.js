@@ -22,6 +22,11 @@ export const navTexts = [
   },
 ];
 
+// Header
+export const headerText = {
+  title: "immersive experiences that deliver",
+};
+
 // About
 export const aboutTexts = {
   heading: "the leader in interactive vr",
