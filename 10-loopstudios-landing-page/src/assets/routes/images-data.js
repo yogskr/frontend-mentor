@@ -4,7 +4,8 @@ export const logo = {
 };
 
 export const about = {
-  src: "./src/assets/images/mobile/image-interactive.jpg",
+  srcMobile: "./src/assets/images/mobile/image-interactive.jpg",
+  srcDesktop: "./src/assets/images/desktop/image-interactive.jpg",
   alt: "A man playing with a VR device",
 };
 
