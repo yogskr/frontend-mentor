@@ -1,5 +1,5 @@
-import { logo } from "../assets/routes/images-data";
-import { footerText } from "../assets/routes/text-data";
+import { logo } from "../assets/data/images-data";
+import { footerText } from "../assets/data/text-data";
 import NavMenu from "../components/NavMenu";
 import SocialMedia from "../components/SocialMedia";
 
