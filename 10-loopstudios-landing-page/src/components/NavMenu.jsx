@@ -1,4 +1,4 @@
-import { navTexts } from "../assets/routes/text-data";
+import { navTexts } from "../assets/data/text-data";
 import { uppercaseLetter } from "../assets/helpers/helper";
 import { capitalizedFirstLetter } from "../assets/helpers/helper";
 
