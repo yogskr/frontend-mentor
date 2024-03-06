@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/10-loopstudios-landing-page",
+  base: "frontend-mentor/10-loopstudios-landing-page/",
 });
