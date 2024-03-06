@@ -1,5 +1,5 @@
-import { projectListTexts } from "../assets/routes/text-data";
-import { projectText } from "../assets/routes/text-data";
+import { projectListTexts } from "../assets/data/text-data";
+import { projectText } from "../assets/data/text-data";
 import { uppercaseLetter } from "../assets/helpers/helper";
 
 export default function Projects() {
