@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { logo } from "../assets/routes/images-data";
+import { logo } from "../assets/data/images-data";
 import NavMenu from "./NavMenu";
 
 export default function NavBar() {
@@ -32,14 +32,17 @@ export default function NavBar() {
       <div
         className={`fixed left-0 right-0 z-20 flex items-center justify-between px-5 py-8 md:px-10 ${
           scrolled
-            ? "backdrop-blur-lg backdrop-brightness-75"
+            ? "backdrop-blur-lg backdrop-brightness-50"
             : "bg-transparent"
-        }`}
+        } lg:px-44`}
       >
-        <img className="md:w-60" src={logo.src} alt={logo.src} />
+        <img src={logo.src} alt={logo.src} />
         <figure className="lg:hidden">
           <Hamburger toggled={isOpen} toggle={setIsOpen} color="#fff" />
         </figure>
+        <ul className="hidden h-12 items-center gap-8 text-white lg:flex">
+          <NavMenu isHeader={false} />
+        </ul>
       </div>
       {isOpen && (
         <aside className="fixed bottom-0 right-0 z-10 h-full w-full bg-black px-5 py-8 text-white md:px-10">
