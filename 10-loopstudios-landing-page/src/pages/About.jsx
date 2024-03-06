@@ -11,7 +11,7 @@ export default function About() {
         src={about.srcDesktop}
         alt={about.alt}
       />
-      <article className="flex h-60 flex-col items-center justify-center text-center lg:absolute lg:left-[50%] lg:h-72 lg:w-[43%] lg:justify-end lg:self-end lg:bg-white lg:pb-0 lg:pl-[4rem] lg:pr-0 lg:text-start xl:left-[51%] xl:h-80 xl:w-[36%] xl:pl-[5rem]">
+      <article className="flex h-60 flex-col items-center justify-center text-center lg:absolute lg:left-[50%] lg:h-72 lg:w-[43%] lg:justify-end lg:self-end lg:bg-white lg:pb-0 lg:pl-[4rem] lg:pr-0 lg:text-start xl:left-[51%] xl:h-80 xl:w-[37%] xl:pl-[5.5rem]">
         <h2 className="mb-4 font-josefinSans text-[2rem] font-light leading-none md:text-[2.5rem] lg:text-[2.5rem] xl:text-[3rem]">
           {uppercaseLetter(aboutTexts.heading)}
         </h2>
